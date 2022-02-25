@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Project - Weather App</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Odin Project Weather App</h1>
+            <form name="locationForm">
+                <label for="location">City:</label>
+                <input id="location" type="text" name="location" placeholder="Enter a city..." />
+                <fieldset>
+                    <legend>Scale</legend>
+                    <label for="fahrenheit">Fahrenheit</label>
+                    <input type="radio" id="fahrenheit" name="scale" value="fahrenheit" checked>
+                    <label for="celsius">Celsius</label>
+                    <input type="radio" id="celsius" name="scale" value="celsius">
+                </fieldset>
+                <br />
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+        <div id="loading"></div>
+        <div class="table-wrapper" aria-live="polite">
+            <div id="current">
+            </div>
+            <table>
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
